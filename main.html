@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nate's Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sport Event Finder</title>
 </head>
+
+
 <body>
-    <h1>Nate's Page</h1>
+    <header>
+        <div id="header">
+            <div class="burgerContainer">
+                <a id="burgerIcon" href="#"><i class="fa fa-bars"></i></a>
+            </div>
+            <ul id="navBar">
+                <li>
+                    <a href="/football">Football</a>
+                </li>
+                <li>
+                    <a href="/basketball">basketball</a>
+                </li>
+                <li>
+                    <a href="/baseball">Baseball</a>
+                </li>
+                <li>
+                    <a href="hockey">hockey</a>
+                </li>
+                <li>
+                    <a href="soccer">Soccer</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="searchDiv">
+            <div id="search" class="searchBar">
+                <div id="SearchContainerDiv">
+                    <h2>Everything is possible, dream it and we'll take you there!!</h2>
+                    <div id="largeSearch">
+                        <i class="fa fa-search"></i>
+                        <form id="searchForm" action="/search">
+                            <input id="search" name="q" placeholder="Enter Sport Event" autocomplete="off">
+                            <button type="submit">Search</button>
+                            <div id="searchResults"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="eventscontainer">
+        <div class="eventListDiv" id="allEventList">
+            <div class="event-list-on-top">
+                <div class="listContents">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
 </body>
+
 </html>
