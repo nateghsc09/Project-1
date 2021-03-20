@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url("../images/istockphoto.jpg") lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    border:2px solid lightblue;
+    text-align: center;
+    background-color: lightblue;
+    animation-name: header;
+    animation-duration: 5s;
+}
+
+@keyframes header {
+       from{ background-color:lightblue}
+        to{ background-color: grey}
+        from{border-color: lightblue;}
+        to{border-color: grey;}
+    }
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.button{
+    width: 15%;
+}
