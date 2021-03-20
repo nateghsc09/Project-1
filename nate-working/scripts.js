@@ -1,4 +1,4 @@
-$(document).ready(function() {
+
 
 
 
@@ -12,7 +12,7 @@ $(document).ready(function() {
 		$('#employee-table').html("");
 		$('#city-name').val('');
 		var key = "Od7j5mMr30CGAReRYE4XKAfiULRQvEDW";
-		var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?classificationName=sport&apikey="+key+"&city="+city+"";
+		var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?classificationName=sport&apikey="+key+"&city="+city+"&startDateTime=2021-05-01T14:00:00Z&endDateTime=2021-05-15T14:00:00Z";
 		var events_container = [];
 		var event = {
 			name: "",
@@ -46,4 +46,3 @@ $(document).ready(function() {
 		});
 
 	});
-})
