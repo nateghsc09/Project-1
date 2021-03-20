@@ -9,7 +9,7 @@
 
 		var city = $('#city-name').val().trim();
 
-		$('#employee-table').html("");
+		$('#results-table').html("");
 		$('#city-name').val('');
 		var key = "Od7j5mMr30CGAReRYE4XKAfiULRQvEDW";
 		var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?classificationName=sport&apikey="+key+"&city="+city+"&startDateTime=2021-05-01T14:00:00Z&endDateTime=2021-05-15T14:00:00Z";
