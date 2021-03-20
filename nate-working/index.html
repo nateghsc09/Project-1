@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sports Search</title>
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   
+  </head>
+  <body>
+ 
+        <!-- Maps -->
+        <!-- search nearby concerts div -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6">
+              <div class="page-header">
+                <h1 style="padding-bottom: 0">Sports Search</h1>
+              </div>
+              <form id="search-form" style="color: black; margin-bottom: 20px" onsubmit="return search()">
+                <input type="text" id="city-name" placeholder="Search City ...">
+                <input class="btn btn-info btn-primary" id="city-search" type="submit" value="Submit">
+              </form>
+            </div>
+          </div>
+          </div>
+      
+        <div class='row'>
+          <div class="panel panel-primary" style="width: 80%; margin: auto">
+            <div class="panel-body">
+              <div class='row' style='border-bottom: 2px solid #ccc; padding-bottom: 5px; font-weight: bold; font-size: 20px; color: black'>
+                <div class='col-xs-5'>Home Team</div>
+                <div class='col-xs-2'>Sport</div>
+                <div class='col-xs-3'>Arena</div>
+                <div class='col-xs-2'>Date</div>
+              </div>
+              <div id='results-table'></div>
+            </div>
+          </div>
+        </div>
+      
+        
+        <!-- jQuery CDN -->
+        <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+        <!-- Bootstrap CDN -->
+       
+        <!-- js -->
+        <script src="scripts.js"></script>
+      </body>
+    </html>
