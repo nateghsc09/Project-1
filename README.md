@@ -7,3 +7,4 @@ I enjoy JavaScript because it utilizes both Functional programming and Object-or
 trying to add things in readme, should be in nate branch
 
 This is trying a new branch.
+ Just  checking
