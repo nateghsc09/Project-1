@@ -43,7 +43,7 @@
 				event.url = response._embedded.events[i].url;
 				events_container.push(event);
 				console.log(events_container[i]);
-				$('#results-table').append("<div class='row' style='border-bottom: 1px solid #ccc; padding-bottom: 5px; font-weight: bold; color: black'><div class='col-xs-5'><a href='"+event.url+"'>"+event.name+"</a></div><div class='col-xs-2'>"+event.genre+"</div><div class='col-xs-3'>"+event.location+"</div><div class='col-xs-2'>"+event.date+"</div></div>");
+				$('#results-table').append("<div class='row'><div class='col-xs-4'><a href='"+event.url+"'>"+event.name+"</a></div><div class='col-xs-2'>"+event.genre+"</div><div class='col-xs-3'>"+event.location+"</div><div class='col-xs-3'>"+event.date+"</div></div>");
 			}
 
 		});
