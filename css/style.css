@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     background: url("../images/istockphoto.jpg") lightgray;
     background-repeat: no-repeat;
@@ -22,6 +23,7 @@ body{
     justify-content: center;
     width: 100%;
 }
+
 header{
     font-size: 50px;
     margin: 0px;
@@ -36,17 +38,18 @@ header{
 .outer{
     margin-left: 30px;
 }
+
 .inside-panel{
     width: 100%;
     margin: 0px;
 }
 
 @keyframes header {
-       from{ background-color:lightblue}
-        to{ background-color: grey}
-        from{border-color: lightblue;}
-        to{border-color: grey;}
-    }
+    from{ background-color:lightblue}
+    to{ background-color: grey}
+    from{border-color: lightblue;}
+    to{border-color: grey;}
+}
 
 .fields{
     display: flex;
@@ -61,133 +64,8 @@ header{
     display: flex;
     position: relative;
 }
+
 @keyframes animation{
     from{border-bottom:red;}
     to{border-bottom:blue;}
 }
-/* #part1{
-    border: 2px solid red ;
-    width: 150px;
-    height: 100px;
-    transform: skew(20deg);
-    position: absolute;
-    z-index: 1;
-}
-
-#part2{
-    border: 2px solid blue ;
-    width: 150px;
-    height: 100px;
-    transform: skew(20deg) rotate(90deg);
-    position: absolute;
-    z-index: 2;
-}
-
-#part3{
-    border: 2px solid yellow;
-    width: 150px;
-    height: 100px;
-    transform: skew(20deg) rotate(45deg);
-    position: absolute;
-    z-index: 3;
-}
-
-#part4{
-    border: 2px solid green;
-    width: 150px;
-    height: 100px;
-    transform: skew(20deg) rotate(-45deg);
-    position: absolute;
-    z-index: 4;
-} */
-
-#part1 {
-    margin: 50px 0;
-    position: relative;
-    display: block;
-    color: red;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
-    border-left: 100px solid transparent;
-    transform: rotate(35deg);
-    animation-name: animation;
-    animation-duration: 1s;
-  }
-  #part1:before {
-    border-bottom: 80px solid red;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -45px;
-    left: -65px;
-    display: block;
-    content: '';
-    transform: rotate(-35deg);
-    animation-name: animation;
-    animation-duration: 1s;
-  }
-  #part1:after {
-    position: absolute;
-    display: block;
-    color: red;
-    top: 3px;
-    left: -105px;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid red;
-    border-left: 100px solid transparent;
-    transform: rotate(-70deg);
-    content: '';
-    animation-name: animation;
-    animation-duration: 1s;
-  }
-
-  #part2 {
-    margin: 50px 0;
-    position: absolute;
-    display: block;
-    color: blue;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid blue;
-    border-left: 100px solid transparent;
-    transform: rotate(35deg);
-  }
-  #part2:before {
-    border-bottom: 80px solid blue;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    position: absolute;
-    height: 0;
-    width: 0;
-    top: -45px;
-    left: -65px;
-    display: block;
-    content: '';
-    transform: rotate(-35deg);
-  }
-  #part2:after {
-    position: absolute;
-    display: block;
-    color: blue;
-    top: 3px;
-    left: -105px;
-    width: 0px;
-    height: 0px;
-    border-right: 100px solid transparent;
-    border-bottom: 70px solid blue;
-    border-left: 100px solid transparent;
-    transform: rotate(-70deg);
-    content: '';
-  }
-
-  #part2{
-      transform: skew(180deg);
-  }
-
