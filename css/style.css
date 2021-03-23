@@ -28,9 +28,10 @@ header{
     font-size: 50px;
     margin: 0px;
     padding: 0px;
-    border:2px solid lightblue;
+    border:2px solid red;
     text-align: center;
-    background-color: lightblue;
+    background-color: red;
+    color:white;
     animation-name: header;
     animation-duration: 5s;
 }
@@ -59,9 +60,11 @@ header{
 
 @keyframes header {
     from{ background-color:lightblue}
-    to{ background-color: grey}
+    to{ background-color: red}
     from{border-color: lightblue;}
-    to{border-color: grey;}
+    to{border-color: red;}
+    from{color: lightblue;}
+    to{color:white}
 }
 
 .fields{
@@ -71,16 +74,6 @@ header{
 }
 .button{
     width: 15%;
-}
-
-.animation{
-    display: flex;
-    position: relative;
-}
-
-@keyframes animation{
-    from{border-bottom:red;}
-    to{border-bottom:blue;}
 }
 
 @media (min-width: 400px) {
