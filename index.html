@@ -102,8 +102,10 @@
         </div>
         <form id="search-form" style="color: black; margin-bottom: 20px" onsubmit="return search()">
           <input type="text" id="city-name" placeholder="Search City ...">
-          <input type="text" id ="start-date" placeholder="Start Date">
-          <input type="text" id ="end-date" placeholder="End Date">
+          <label for="start-date">Start Date:</label>
+          <input type="date" id ="start-date">
+          <label for="end-date">End Date:</label>
+          <input type="date" id ="end-date">
           <div> <input class="btn btn-info btn-primary" id="city-search" type="submit" value="Submit"></div>
          
         </form>
