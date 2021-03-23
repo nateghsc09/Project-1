@@ -35,8 +35,21 @@ header{
     animation-duration: 5s;
 }
 
+#search-form{
+    text-align: center;
+    margin: 10px;
+}
 .outer{
     margin-left: 30px;
+}
+
+.names{
+    overflow-wrap: break-word;
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 5px; 
+    font-weight: bold; 
+    font-size: 20px; 
+    color: black
 }
 
 .inside-panel{
@@ -68,4 +81,10 @@ header{
 @keyframes animation{
     from{border-bottom:red;}
     to{border-bottom:blue;}
+}
+
+@media (min-width: 400px) {
+    .col-xs-2{
+        overflow-wrap: break-word;
+    }
 }
