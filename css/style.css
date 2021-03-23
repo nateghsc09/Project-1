@@ -41,4 +41,5 @@ header{
 }
 .button{
     width: 15%;
+    float:right;
 }
