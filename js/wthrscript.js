@@ -22,6 +22,6 @@ function searchForCityWeather(city) {
 $("#search-city-form").submit(function (event) {
   // alert("Handler for .submit() called.");
   event.preventDefault();
-  searchForCityWeather($("input").first().val());
+  searchForCityWeather($("#city-nam").first().val());
   console.log(searchForCityWeather)
 });
