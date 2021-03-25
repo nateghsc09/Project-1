@@ -15,7 +15,7 @@ function searchForCityWeather(city) {
     .then(function (data) {
       console.log(data.main);
       $("#current-temp").html(
-        `<div id = "currentTemp">${data.main.temp}</div> <div id = "feelsLike">${data.main.feels_like}</div><div id = "highTemp">${data.main.temp_max}</div><div id = "lowTemp">${data.main.temp_min}</div>`
+        `<div id = "currentTemp">Current Temperature ${data.main.temp + "°F"}</div> <div id = "feelsLike">Feels Like ${data.main.feels_like + "°F"}</div><div id = "highTemp">High Temperature ${data.main.temp_max + "°F"}</div><div id = "lowTemp">Low Temperature ${data.main.temp_min + "°F"}</div>`
       );
     });
 }
