@@ -19,8 +19,9 @@ function searchForCityWeather(city) {
       );
     });
 }
-$("#city-search").submit(function (event) {
+$("#search-city-form").submit(function (event) {
   // alert("Handler for .submit() called.");
   event.preventDefault();
   searchForCityWeather($("input").first().val());
+  console.log(searchForCityWeather)
 });

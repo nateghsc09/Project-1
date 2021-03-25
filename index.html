@@ -8,7 +8,7 @@
     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
     integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
+  <!-- <link rel="stylesheet" href="./css/style.css"> -->
   <title>Sport Event Finder</title>
 </head>
 
@@ -82,7 +82,6 @@
                                 <div class='col-xs-2'>Date</div>
                             </div>
                             <div id='results-table'></div>
-                            <div id="current-temp"></div>
                         </div>
                     </div>
                 </div>
@@ -90,6 +89,23 @@
         </div>
     </div>
   </div>
+
+  <h1>Nate's Page</h1>
+    <div class="search-city">
+        <form id="search-city-form">
+          <input type="text" name="city" placeholder="Search" />
+          <button type="submit" id="citySearch" class="btn">Search City</button>
+        </form>
+        <div id = "current-temp"> 
+
+        </div>
+        <!-- no need for state entry -->
+        <!-- <div class="search-state">
+            <form id="search-state-form">
+              <input type="text" name="state" placeholder="Search" />
+              <button type="submit" class="btn">Search State</button>
+            </form>
+        </div>     -->
 
   
 
@@ -111,6 +127,7 @@
       style="border:0" allowfullscreen></iframe>
   </div> -->
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
