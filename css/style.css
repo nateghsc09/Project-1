@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../images/istockphoto.jpg") lightgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+header{
+    font-size: 50px;
+    margin: 0px;
+    padding: 0px;
+    border:2px solid red;
+    text-align: center;
+    background-color: red;
+    color:white;
+    animation-name: header;
+    animation-duration: 5s;
+}
+
+#search-form{
+    text-align: center;
+    margin: 10px;
+}
+.outer{
+    margin-left: 30px;
+}
+
+.names{
+    overflow-wrap: break-word;
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 5px; 
+    font-weight: bold; 
+    font-size: 20px; 
+    color: black
+}
+
+.inside-panel{
+    width: 100%;
+    margin: 0px;
+}
+
+@keyframes header {
+    from{ background-color:lightblue}
+    to{ background-color: red}
+    from{border-color: lightblue;}
+    to{border-color: red;}
+    from{color: lightblue;}
+    to{color:white}
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+.button{
+    width: 15%;
+}
+
+@media (min-width: 400px) {
+    .col-xs-2{
+        overflow-wrap: break-word;
+    }
+}
