@@ -35,6 +35,10 @@ header{
     animation-name: header;
     animation-duration: 5s;
 }
+.grid-x{
+    display: flex;
+    justify-content: center;
+}
 
 #search-form{
     text-align: center;
