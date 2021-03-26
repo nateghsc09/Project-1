@@ -12,12 +12,19 @@ body{
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     margin: 0px;
     padding: 0px;
     width: 100%;
 }
 
+.weather{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
 .row{
     display: flex;
     justify-content: center;
@@ -85,4 +92,8 @@ header{
     .col-xs-2{
         overflow-wrap: break-word;
     }
+}
+
+#current-temp{
+    margin-left: 5px;
 }
