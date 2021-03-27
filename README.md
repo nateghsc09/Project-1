@@ -1,10 +1,12 @@
 #   PROJECT-1
 
-This is a sample for class
+url:https://nateghsc09.github.io/Project-1-Sports-Event-Search/
 
-I enjoy JavaScript because it utilizes both Functional programming and Object-oriented programming.
+-HTML: Norman
+-CSS: Bootstrap/Foundation/ Debugging: Joel
+-Javascript: Even Search:Nate  Weather: Bryan
+Jquery, Ticketmaster API, OpenWeatherMap API
 
-trying to add things in readme, should be in nate branch
+Sport Event Finder allows you to search for sporting events in a city over a selected amount of time. Also get a current weather information
 
-This is trying a new branch.
- Just  checking
+<img src="./images/screenshot.png"></img>
